@@ -1,16 +1,31 @@
 package com.jeferson.jeclient.dto;
 
 import com.jeferson.jeclient.entities.Client;
-import jakarta.persistence.Column;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
 public class ClientDTO {
     private Long id;
+
+    @Size(min = 3, max = 80, message = "nome precisa ter de 3 a 80 caracteres")
+    @NotBlank(message = "campo requerido")
     private String name;
+
+    @Size(min = 11, max = 11, message = "o CPF dever ter exatamente 11 dígitos")
+    @NotBlank(message = "campo CPF obrigatório!")
     private String cpf;
+
+    @PositiveOrZero(message = "A renda deve ser zero ou um valor positivo.")
     private Double income;
+
+    @Past(message = "A data de nascimento deve ser uma data anterior ao dia de hoje.")
     private LocalDate birthDate;
+
+    @PositiveOrZero(message = "deve ser zero ou um valor positivo.")
     private Integer children;
 
     public ClientDTO(){}
