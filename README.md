@@ -190,7 +190,7 @@ Desenvolvi este projeto para mostrar que:
 **Jeferson de Souza Martins**
 Desenvolvedor Backend Jr (em formação)
 Focado em **Java, Spring Boot, SQL, Azure e boas práticas**
-LinkedIn: *[adicione aqui seu link](https://www.linkedin.com/in/jeferson-martins-48b9b690/)*
+LinkedIn: *https://www.linkedin.com/in/jeferson-martins-48b9b690/*
 
 ---
 
